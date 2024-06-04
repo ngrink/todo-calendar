@@ -11,12 +11,12 @@
 .cell_active {
   .cell__day {
     background-color: #307ed6;
-    color: #fff
+    color: #fff !important
   }
 }
 
 .cell_weekend {
-  background-color: hsl(200, 100%, 99%);
+  background-color: hsl(0, 100%, 99%);
 
   .cell__day {
     color: #ff7676
