@@ -2,8 +2,13 @@ import { createContext, useContext } from "react";
 import { configurePersistable } from 'mobx-persist-store';
 import { injectStores } from '@mobx-devtools/tools';
 
+import { CalendarStore } from "@/modules/calendar";
 
-export const store = {}
+const calendarStore = new CalendarStore()
+
+export const store = {
+  calendarStore
+}
 
 export const StoreContext = createContext(store);
 
