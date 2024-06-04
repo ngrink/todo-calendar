@@ -28,7 +28,7 @@ export class CalendarStore {
       return ''
     }
 
-    return format(this.selectedDay, 'yyyy-mm-dd')
+    return this.getFormattedDate(this.selectedDay)
   }
 
   get selectedTasks() {
@@ -86,6 +86,10 @@ export class CalendarStore {
 
   unsetSelectedDay() { 
     this.selectedDay = null
+  }
+
+  getFormattedDate(date: Date) {
+    return format(date, 'yyyy-MM-dd')
   }
 }
 

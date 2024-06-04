@@ -1,9 +1,9 @@
 .cell {
-  padding: 5px;
-
   display: flex;
   flex-direction: column;
+  padding: 5px;
   gap: 4px;
+  aspect-ratio: 21 / 9;
 
   outline: 1px solid #e5e5e5;
 }
@@ -52,20 +52,4 @@
   font-weight: 400;
   color: #555;
   background-color: transparent;
-}
-
-.cell__tasks {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-
-  list-style-type: none;
-}
-
-.cell__task {
-  padding: 1px 4px;
-  
-  font-size: 14px;
-  font-weight: 300;
-  color: #333;
 }

@@ -28,11 +28,6 @@ export const CalendarCell: FC<CalendarCellProps> = observer(
         <div className={cl.cellHeader}>
           <span className={cl.cellDay}>{day}</span>
         </div>
-        <ul className={cl.cellTasks}>
-          <li className={cl.cellTask}>Some task</li>
-          <li className={cl.cellTask}>Another task</li>
-          <li className={cl.cellTask}>+2</li>
-        </ul>
       </div>
     );
   }
