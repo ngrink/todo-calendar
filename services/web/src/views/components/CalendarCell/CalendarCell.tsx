@@ -22,6 +22,7 @@ export const CalendarCell: FC<CalendarCellProps> = observer(
           [cl.cellActive]: isToday(date),
           [cl.cellWeekend]: isWeekend(date),
           [cl.cellOutward]: getMonth(selectedMonth) !== getMonth(date),
+          [cl.cellDayoff]: calendarStore.isDayOff(date),
         })}
         onClick={() => calendarStore.setSelectedDay(date)}
       >
