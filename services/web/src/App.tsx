@@ -1,5 +1,7 @@
+import { CalendarScreen } from "@/screens/Calendar";
+
 function App() {
-  return <div>Calendar</div>;
+  return <CalendarScreen />;
 }
 
 export default App;
