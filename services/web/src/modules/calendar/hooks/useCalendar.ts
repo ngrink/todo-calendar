@@ -20,7 +20,7 @@ export const useCalendar = (date?: Date) => {
     const days: Date[] = []
     let current = tableFirstDay
 
-    while (current <= tableLastDay) {
+    for (let i = 0; i < 42; i++) {
       days.push(current);
       current = addDays(current, 1)
     }
