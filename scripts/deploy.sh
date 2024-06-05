@@ -1,0 +1,1 @@
+scp -P 2224 -r ./services/web/dist root@ngrink.ru:/srv/www/todo-calendar/services/web
