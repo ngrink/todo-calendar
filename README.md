@@ -11,3 +11,13 @@
 ## Technology Stack
 **Frontend**:  
 React, Mobx, TypeScript, Sass, Vite, Date-fns
+
+## Installation
+
+1. Install and run project
+```bash
+git clone https://github.com/ngrink/todo-calendar.git 
+cd todo-calendar
+docker compose up -d
+```
+2. Open http://localhost:15173
