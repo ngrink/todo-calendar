@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile
+    volumes:
+      - ./services/web/src:/app/src
+      - ./services/web/public:/app/public
+    ports:
+      - 15173:5173
+
