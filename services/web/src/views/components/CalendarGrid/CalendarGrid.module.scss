@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 1px;
+  
+  border: 1px solid #e5e5e5;
+  list-style-type: none;
+}
+
+.grid__item {
+  background-color: #fff;
+}

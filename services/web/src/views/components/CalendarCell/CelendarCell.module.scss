@@ -1,0 +1,55 @@
+.cell {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 4px;
+  aspect-ratio: 21 / 9;
+
+  outline: 1px solid #e5e5e5;
+}
+
+.cell_active {
+  .cell__day {
+    background-color: #307ed6;
+    color: #fff !important
+  }
+}
+
+.cell_weekend {
+  background-color: hsl(0, 100%, 99%);
+
+  .cell__day {
+    color: #ff7676
+  }
+}
+
+.cell_dayoff {
+  .cell__day {
+    color: #ff7676
+  }
+}
+
+.cell_outward {
+  opacity: .25;
+}
+
+.cell__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cell__day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 50%;
+  
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  background-color: transparent;
+}
