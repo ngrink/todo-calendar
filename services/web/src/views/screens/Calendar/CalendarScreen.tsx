@@ -1,5 +1,3 @@
-import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-
 import { useCalendar } from "@/modules/calendar";
 import { CalendarMonitor } from "@/components/CalendarMonitor";
 import { Calendar } from "@/components/Calendar";
@@ -11,23 +9,18 @@ export const CalendarScreen = () => {
     useCalendar();
 
   return (
-    <ReactScrollWheelHandler
-      upHandler={() => goNextMonth()}
-      downHandler={() => goPreviousMonth()}
-    >
-      <div className={cl.page}>
-        <CalendarMonitor
-          selectedMonth={selectedMonth}
-          goPreviousMonth={goPreviousMonth}
-          goNextMonth={goNextMonth}
-        />
+    <div className={cl.page}>
+      <CalendarMonitor
+        selectedMonth={selectedMonth}
+        goPreviousMonth={goPreviousMonth}
+        goNextMonth={goNextMonth}
+      />
 
-        <div className={cl.calendarWrapper}>
-          <Calendar selectedMonth={selectedMonth} dates={selectedDays} />
-        </div>
-
-        <TasksModal />
+      <div className={cl.calendarWrapper}>
+        <Calendar selectedMonth={selectedMonth} dates={selectedDays} />
       </div>
-    </ReactScrollWheelHandler>
+
+      <TasksModal />
+    </div>
   );
 };
